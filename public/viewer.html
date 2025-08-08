@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+    <style>
+      html, body {
+        margin: 0;
+        height: 100%;
+        background: #111;
+      }
+
+      model-viewer {
+        width: 100vw;
+        height: 100vh;
+      }
+    </style>
+  </head>
+  <body>
+    <model-viewer
+      src="/api/getModel"
+      camera-controls
+      auto-rotate
+      background-color="#111"
+      disable-zoom
+      shadow-intensity="1"
+      exposure="1"
+      alt="3D Model"
+    ></model-viewer>
+  </body>
+</html>
